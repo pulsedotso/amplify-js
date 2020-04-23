@@ -1,5 +1,5 @@
 {
-  "name": "@aws-amplify/ui",
+  "name": "@pulse-amplify/ui",
   "version": "2.0.2",
   "main": "dist/aws-amplify-ui.js",
   "types": "lib/index.d.ts",

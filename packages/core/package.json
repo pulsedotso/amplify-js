@@ -1,5 +1,5 @@
 {
-	"name": "@aws-amplify/core",
+	"name": "@pulse-amplify/core",
 	"version": "3.2.3",
 	"description": "Core category of aws-amplify",
 	"main": "./lib/index.js",

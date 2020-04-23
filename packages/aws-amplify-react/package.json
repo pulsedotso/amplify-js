@@ -96,13 +96,13 @@
     "regenerator-runtime": "^0.11.1"
   },
   "peerDependencies": {
-    "@aws-amplify/analytics": "^2.0.0",
-    "@aws-amplify/api": "^2.0.0",
-    "@aws-amplify/auth": "^2.0.0",
-    "@aws-amplify/core": "^2.0.0",
-    "@aws-amplify/interactions": "^2.0.0",
-    "@aws-amplify/storage": "^2.0.0",
-    "@aws-amplify/ui": "^2.0.0",
-    "@aws-amplify/xr": "1.1.5"
+    "@pulse-amplify/analytics": "^2.0.0",
+    "@pulse-amplify/api": "^2.0.0",
+    "@pulse-amplify/auth": "^2.0.0",
+    "@pulse-amplify/core": "^2.0.0",
+    "@pulse-amplify/interactions": "^2.0.0",
+    "@pulse-amplify/storage": "^2.0.0",
+    "@pulse-amplify/ui": "^2.0.0",
+    "@pulse-amplify/xr": "1.1.5"
   }
 }
