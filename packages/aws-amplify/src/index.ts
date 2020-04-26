@@ -19,13 +19,10 @@ import Analytics, {
 	AWSKinesisFirehoseProvider,
 	AmazonPersonalizeProvider,
 } from '@aws-amplify/analytics';
-import Auth, { AuthClass } from '@aws-amplify/auth';
+import Auth, { AuthClass } from '@pulse-amplify/amplify-auth';
 import Storage, { StorageClass } from '@aws-amplify/storage';
-import API, { APIClass, graphqlOperation } from '@aws-amplify/api';
-import PubSub, { PubSubClass } from '@aws-amplify/pubsub';
 import Cache from '@aws-amplify/cache';
 import Interactions, { InteractionsClass } from '@aws-amplify/interactions';
-import * as UI from '@aws-amplify/ui';
 import XR, { XRClass } from '@aws-amplify/xr';
 import Predictions from '@aws-amplify/predictions';
 
@@ -43,15 +40,12 @@ export default Amplify;
 
 Amplify.Auth = Auth;
 Amplify.Analytics = Analytics;
-Amplify.API = API;
 Amplify.Storage = Storage;
 Amplify.I18n = I18n;
 Amplify.Cache = Cache;
-Amplify.PubSub = PubSub;
 Amplify.Logger = Logger;
 Amplify.ServiceWorker = ServiceWorker;
 Amplify.Interactions = Interactions;
-Amplify.UI = UI;
 Amplify.XR = XR;
 Amplify.Predictions = Predictions;
 
@@ -59,8 +53,6 @@ export {
 	Auth,
 	Analytics,
 	Storage,
-	API,
-	PubSub,
 	I18n,
 	Logger,
 	Hub,
@@ -70,7 +62,6 @@ export {
 	Signer,
 	ServiceWorker,
 	Interactions,
-	UI,
 	XR,
 	Predictions,
 };
@@ -78,9 +69,7 @@ export {
 export {
 	AuthClass,
 	AnalyticsClass,
-	APIClass,
 	StorageClass,
-	PubSubClass,
 	InteractionsClass,
 	XRClass,
 	AnalyticsProvider,
@@ -89,4 +78,3 @@ export {
 	AWSKinesisFirehoseProvider,
 	AmazonPersonalizeProvider,
 };
-export { graphqlOperation };

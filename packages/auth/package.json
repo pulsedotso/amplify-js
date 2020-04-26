@@ -1,5 +1,5 @@
 {
-  "name": "@aws-amplify/auth",
+  "name": "@pulse-amplify/amplify-auth",
   "version": "2.1.7",
   "description": "Auth category of aws-amplify",
   "main": "./lib/index.js",
