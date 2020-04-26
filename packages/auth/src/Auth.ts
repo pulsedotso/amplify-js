@@ -1882,12 +1882,17 @@ export default class AuthClass {
 				currentUser.setSignInUserSession(session);
 				//#endregion
 
-				if (window && typeof window.history !== 'undefined') {
-					window.history.replaceState(
-						{},
-						null,
-						(this._config.oauth as AwsCognitoOAuthOpts).redirectSignIn
-					);
+				if (
+					window &&
+					typeof window.history !== 'undefined' &&
+					(this._config.oauth as AwsCognitoOAuthOpts)
+						.disableRedirectAfterSignIn !== true
+				) {
+					const replaceStateUrl = (this._config.oauth as AwsCognitoOAuthOpts)
+						.redirectAfterSignIn
+						? (this._config.oauth as AwsCognitoOAuthOpts).redirectAfterSignIn
+						: (this._config.oauth as AwsCognitoOAuthOpts).redirectSignIn;
+					window.history.replaceState({}, null, replaceStateUrl);
 				}
 
 				return credentials;
